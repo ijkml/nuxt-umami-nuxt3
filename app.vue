@@ -38,7 +38,7 @@
 }
 
 .demo-page-root {
-  @apply flex p-16 w-full items-center relative justify-center min-h-screen;
+  @apply flex px-16 py-32 w-full items-center relative justify-center min-h-screen;
 }
 
 .demo-page-root .page-container {

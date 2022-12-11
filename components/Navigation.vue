@@ -28,7 +28,7 @@ const navLinks = [
   <div class="nav-container">
     <template v-for="nav in navLinks" :key="nav.id">
       <nav :id="nav.id">
-        <NuxtLink v-for="pl in nav.links" :key="pl.text" :to="pl.link">
+        <NuxtLink v-for="pl in nav.links" :key="pl.text" class="nav-links" exact-active-class="active" :to="pl.link">
           {{ pl.text }}
         </NuxtLink>
       </nav>
@@ -47,13 +47,21 @@ nav {
   @apply flex justify-around gap-4 lg:gap-8;
 }
 
-nav > a {
+.nav-links {
   @apply transition-all duration-250 underline underline-dashed
     opacity-80 decoration-offset-13 underline-transparent;
 }
 
-nav > a:where(:focus-visible, :hover) {
+.nav-links:where(:focus-visible, :hover, .active) {
   @apply decoration-offset-6 opacity-100 underline-current;
+}
+
+.nav-links.active {
+  @apply text-cyan-8 dark:text-cyan-5;
+}
+
+.nav-links:focus {
+  outline: none !important;
 }
 
 .divider {
@@ -62,9 +70,5 @@ nav > a:where(:focus-visible, :hover) {
 
 .divider:last-of-type {
   @apply hidden;
-}
-
-a:focus {
-  outline: none !important;
 }
 </style>
