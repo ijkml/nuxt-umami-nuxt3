@@ -29,12 +29,12 @@
 
 .left-gradient {
   @apply absolute inset-y-0 left-0 w-1/5 bg-gradient-to-r to-transparent
-    from-green-300 dark:from-green-800 z-1;
+    from-green-300/50 dark:from-green-800/50 z-1;
 }
 
 .right-gradient {
   @apply absolute inset-y-0 right-0 w-1/5 bg-gradient-to-r
-    from-transparent to-cyan-300 dark:to-cyan-800 z-1;
+    from-transparent to-cyan-300/50 dark:to-cyan-800/50 z-1;
 }
 
 .demo-page-root {
