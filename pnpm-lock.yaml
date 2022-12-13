@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.33.1
+  '@ijkml/minimatch': ^0.0.3
   '@unocss/nuxt': ^0.47.5
   '@unocss/reset': ^0.47.5
   eslint: ^8.29.0
@@ -11,6 +12,7 @@ specifiers:
 
 devDependencies:
   '@antfu/eslint-config': 0.33.1_ha6vam6werchizxrnqvarmz2zu
+  '@ijkml/minimatch': 0.0.3
   '@unocss/nuxt': 0.47.5
   '@unocss/reset': 0.47.5
   eslint: 8.29.0
@@ -503,6 +505,10 @@ packages:
       local-pkg: 0.4.2
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@ijkml/minimatch/0.0.3:
+    resolution: {integrity: sha512-zaTb8N+h+HIHBDFN5M56QJNnbNWUa8NLXmvoZ2KFfzrBDjaiARJXqN7HjcGxPNMvsPj/wsl0WwJS6ZdopNQvag==}
     dev: true
 
   /@ioredis/commands/1.2.0:
