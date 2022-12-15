@@ -2,20 +2,20 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.33.1
-  '@ijkml/minimatch': ^0.0.3
   '@unocss/nuxt': ^0.47.5
   '@unocss/reset': ^0.47.5
   eslint: ^8.29.0
+  glob-url: ^0.1.0
   nuxt: 3.0.0
   nuxt-umami: ^1.2.0
   typescript: ^4.9.4
 
 devDependencies:
   '@antfu/eslint-config': 0.33.1_ha6vam6werchizxrnqvarmz2zu
-  '@ijkml/minimatch': 0.0.3
   '@unocss/nuxt': 0.47.5
   '@unocss/reset': 0.47.5
   eslint: 8.29.0
+  glob-url: 0.1.0
   nuxt: 3.0.0_ha6vam6werchizxrnqvarmz2zu
   nuxt-umami: 1.2.0
   typescript: 4.9.4
@@ -505,10 +505,6 @@ packages:
       local-pkg: 0.4.2
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@ijkml/minimatch/0.0.3:
-    resolution: {integrity: sha512-zaTb8N+h+HIHBDFN5M56QJNnbNWUa8NLXmvoZ2KFfzrBDjaiARJXqN7HjcGxPNMvsPj/wsl0WwJS6ZdopNQvag==}
     dev: true
 
   /@ioredis/commands/1.2.0:
@@ -3418,6 +3414,10 @@ packages:
     engines: {node: '>=10.13.0'}
     dependencies:
       is-glob: 4.0.3
+    dev: true
+
+  /glob-url/0.1.0:
+    resolution: {integrity: sha512-wjsaz3cqvsSrTKpqzqSNEhiK6VAi3JdZdYPT1kVB8Jrl5RGb/K9LF9scVjvvG4Zr2E5y7UZsS7vk4XbzpgVQPw==}
     dev: true
 
   /glob/7.2.3:
